@@ -1,0 +1,44 @@
+.section {
+  margin-bottom: 9rem;
+}
+
+.servicesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3.2rem;
+}
+
+.serviceIcon {
+  height: 3.2rem;
+  width: 3.2rem;
+  margin-bottom: 1.8rem;
+  color: #267e36;
+}
+
+.service {
+  padding: 1.2rem;
+}
+
+.serviceText {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+@media (max-width: 68em) {
+}
+@media (max-width: 54em) {
+}
+@media (max-width: 39em) {
+  .servicesContainer {
+    grid-template-columns: 1fr;
+  }
+  .section {
+    text-align: center;
+  }
+  .service {
+    padding: 2.4rem;
+  }
+}
+@media (max-width: 25em) {
+}
