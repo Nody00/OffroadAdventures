@@ -1,0 +1,72 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2.4rem;
+  /* margin: 0 15rem; */
+  margin: 0 15rem;
+  width: 65%;
+  border-radius: 9px;
+  overflow: hidden;
+  /* border: 1px solid red; */
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(0.7rem);
+}
+
+.card img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 500px;
+  /* border: 3px solid #2f9e44; */
+}
+
+.textBox {
+  padding: 2.4rem;
+}
+
+.reviewText {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.8rem;
+}
+
+.smallerText {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.4rem;
+}
+
+.name {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.additionalText {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 68em) {
+  .card {
+    margin: 0 13rem;
+    width: 65%;
+  }
+}
+@media (max-width: 54em) {
+  .card {
+    margin: 0 13rem;
+    width: 60%;
+  }
+}
+@media (max-width: 39em) {
+  .card {
+    margin: 0 10rem;
+    width: 60%;
+  }
+}
+@media (max-width: 25em) {
+  .card {
+    margin: 0 2rem;
+    width: 80%;
+  }
+}

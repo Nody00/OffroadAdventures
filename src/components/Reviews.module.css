@@ -1,0 +1,12 @@
+.carouselContainer {
+  /* height: 50rem; */
+  padding: 5.6rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.reviewSection {
+  background-image: url("../assets/desert.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 9.6rem;
+}

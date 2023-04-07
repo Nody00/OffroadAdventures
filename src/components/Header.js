@@ -42,9 +42,8 @@ const Header = () => {
           </Link>
         </nav>
       )}
-      {mobileNav && (
-        <MobileNav show={mobileNav} onHide={hideMobileNavHandler} />
-      )}
+
+      <MobileNav show={mobileNav} onHide={hideMobileNavHandler} />
 
       <div className={styles.mobileNavBtn} onClick={mobileNavHandler}>
         <Suspense>

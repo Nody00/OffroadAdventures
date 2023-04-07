@@ -1,0 +1,48 @@
+.smallSection {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  color: #fff;
+  background-color: #333;
+  text-align: center;
+  margin-bottom: 9rem;
+}
+
+.containerModified {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.text {
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  gap: 1.2rem;
+}
+
+.textFirst {
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.textFirst span,
+.icon {
+  color: #267e36;
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+@media (max-width: 39em) {
+  .containerModified {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+}

@@ -1,0 +1,114 @@
+.cardContainer img {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 1.2rem;
+}
+
+.cardContainer {
+  border-radius: 9px;
+  overflow: hidden;
+  margin-right: 1.2rem;
+
+  box-shadow: 1rem 1rem 3.2rem rgba(0, 0, 0, 0.075);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100%; */
+}
+.textBox {
+  padding: 1.2rem;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #267e36;
+  margin-bottom: 1.2rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoText {
+  font-size: 1.8rem;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 1.2rem;
+  font-size: 1.6rem;
+}
+
+.featuresContainer {
+  margin-bottom: 2.4rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.featureIcon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6rem;
+  margin-bottom: 2.4rem;
+}
+
+.price {
+  font-size: 2.4rem;
+  color: #f03e3e;
+}
+
+.price span {
+  color: #555;
+  font-size: 1.6rem;
+}
+
+.button {
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 2rem;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #fff;
+}
