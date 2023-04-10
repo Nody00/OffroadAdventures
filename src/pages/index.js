@@ -6,6 +6,7 @@ import HowItWorks from "@/components/How";
 import Vehicles from "@/components/Vehicles";
 import SmallSection from "@/components/Small";
 import ReviewSection from "@/components/Reviews";
+import Footer from "@/components/Footer";
 const HomePage = (props) => {
   return (
     <Fragment>
@@ -15,6 +16,7 @@ const HomePage = (props) => {
       <Vehicles vehicleData={props.carDataProps} />
       <SmallSection />
       <ReviewSection customerReviews={props.customerDataProps} />
+      <Footer />
     </Fragment>
   );
 };
@@ -35,7 +37,7 @@ export async function getStaticProps() {
 
   client.close();
   return {
-    revalidate: 1500,
+    revalidate: 1,
     props: {
       carDataProps: carData.map((car) => ({
         id: car._id.toString(),

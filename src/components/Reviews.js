@@ -21,7 +21,7 @@ const ReviewSection = (props) => {
   };
 
   return (
-    <div>
+    <div className={styles.bigContainer}>
       <div className="container">
         <h2 className="heading-secondary margin-btm-small">Customer Reviews</h2>
         <p className="subheading">Listen to our satisfied customers</p>

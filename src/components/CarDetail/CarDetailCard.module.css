@@ -1,0 +1,46 @@
+.image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 2.4rem;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* gap: 4.8rem; */
+  margin-bottom: 2.4rem;
+
+  background-color: #d4d4d4;
+  border-radius: 4px;
+  list-style: none;
+}
+
+.menu li {
+  padding: 1.6rem;
+  border-bottom: solid 2px #d4d4d4;
+  transition: all 0.2s ease-out;
+}
+
+.activeLi {
+  border-bottom: solid 2px #2f9e44 !important;
+}
+
+.menuLink {
+  font-size: 2rem;
+  transition: all 0.3s ease-out;
+  border-bottom: solid 2px #d4d4d4;
+}
+
+.menuLink:hover {
+  color: #2f9e44;
+  cursor: pointer;
+}
+
+.active {
+  color: #2f9e44;
+}
+
+.menuContainer {
+  margin-bottom: 2.4rem;
+}
