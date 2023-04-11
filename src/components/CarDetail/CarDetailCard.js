@@ -9,9 +9,9 @@ const CarDetailCard = (props) => {
   const router = useRouter();
   const carId = router.query.carDetails;
   const [carDetails, setCarDetails] = useState({
-    description: true,
+    description: false,
     equipment: false,
-    review: false,
+    review: true,
   });
 
   function descriptionHandler() {

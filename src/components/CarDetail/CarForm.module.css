@@ -1,0 +1,174 @@
+.formContainer {
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.price {
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #2f9e44;
+  width: 100%;
+  text-align: center;
+}
+
+.price p {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.carForm {
+  background-color: #f7f7f7;
+  width: 100%;
+
+  border: 1px solid #eee;
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 3.2rem;
+}
+
+.pickUpDate,
+.dropOffDate {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.pickUpDate label,
+.dropOffDate label {
+  font-size: 1.8rem;
+  display: block;
+  font-weight: 600;
+}
+
+.pickUpDate input,
+.dropOffDate input {
+  padding: 1.2rem;
+  width: 100%;
+  border: 1px solid #eee;
+  color: #999;
+}
+
+.durationSelection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.durationSelection p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.durationContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.durationContainer label {
+  display: block;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+.durationContainer input {
+  width: 1.6rem;
+  height: 1.6rem;
+  cursor: pointer;
+}
+.durationContainer p {
+  color: #2f9e44;
+}
+
+.radioContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.extraText {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.equipment {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.8rem;
+  width: 100%;
+}
+
+.equipmentTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.optionContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputContainer {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer label {
+  font-size: 1.4rem;
+}
+
+.equipmentPrice {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.equipmentPrice span {
+  color: #2f9e44;
+}
+
+.buttonContainer {
+  width: 100%;
+}
+
+.button {
+  padding: 1.8rem 3.6rem;
+  border: none;
+  width: 100%;
+  background-color: #2f9e44;
+  /* border-radius: 9px; */
+  font-size: 1.6rem;
+  /* font-weight: 600; */
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #59b169;
+}
+
+.button:active {
+  background-color: #82c58f;
+}

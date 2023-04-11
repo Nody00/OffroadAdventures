@@ -49,13 +49,27 @@ const VehicleCard = (props) => {
         </div>
       </div>
 
-      <div className={styles.buttonContainer}>
-        <div className={styles.price}>
+      <div
+        className={`${styles.buttonContainer} ${
+          props.small ? `${styles.buttonContainerSmall}` : null
+        }`}
+      >
+        <div
+          className={`${styles.price} ${
+            props.small ? `${styles.priceSmall}` : null
+          }`}
+        >
           ${props.price}
           <span>/per day</span>
         </div>
         <Link href={props.id}>
-          <button className={styles.button}>RENT IT</button>
+          <button
+            className={`${styles.button} ${
+              props.small ? `${styles.buttonSmall}` : null
+            }`}
+          >
+            RENT IT
+          </button>
         </Link>
       </div>
     </div>

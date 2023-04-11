@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import styles from "./index.module.css";
 import { MongoClient, ObjectId } from "mongodb";
 import CarDetailCard from "@/components/CarDetail/CarDetailCard";
+import CarForm from "@/components/CarDetail/CarForm";
 const CarDetails = (props) => {
   return (
     <Fragment>
@@ -11,7 +12,7 @@ const CarDetails = (props) => {
       <div className="container">
         <div className={styles.grid}>
           <CarDetailCard data={props.carData} reviewData={props.reviewData} />
-          <div>form</div>
+          <CarForm price={props.carData.price} />
         </div>
       </div>
       <Footer />
