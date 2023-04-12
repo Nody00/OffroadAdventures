@@ -9,17 +9,17 @@ const HeroForm = () => {
   }
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <div>
-        <label>Pick up date</label>
-        <input type="date" id="date" name="date" />
+      <div className={styles.smallContainer}>
+        <label className={styles.label}>Pick up date</label>
+        <input type="date" id="date" name="date" className={styles.input} />
       </div>
-      <div>
-        <label>Drop off date</label>
-        <input type="date" id="ddate" name="ddate" />
+      <div className={styles.smallContainer}>
+        <label className={styles.label}>Drop off date</label>
+        <input className={styles.input} type="date" id="ddate" name="ddate" />
       </div>
-      <div>
-        <label>Pick vehicle brand</label>
-        <select name="cars" id="cars">
+      <div className={styles.smallContainer}>
+        <label className={styles.label}>Pick vehicle brand</label>
+        <select className={styles.input} name="cars" id="cars">
           <option value="" key="1">
             Pick a vehicle
           </option>
@@ -37,8 +37,8 @@ const HeroForm = () => {
           </option>
         </select>
       </div>
-      <div>
-        <button>Find vehicle</button>
+      <div className={styles.smallContainer}>
+        <button className={styles.button}>Find vehicle</button>
       </div>
     </form>
   );
