@@ -8,7 +8,7 @@ const HeroForm = () => {
     router.push("/autoListings");
   }
   return (
-    <form className={styles.formHero} onSubmit={handleSubmit}>
+    <div className={styles.formHeroSpecial}>
       <div className={styles.smallContainer}>
         <label className={styles.label}>Pick up date</label>
         <input type="date" id="date" name="date" className={styles.input} />
@@ -38,9 +38,11 @@ const HeroForm = () => {
         </select>
       </div>
       <div className={styles.smallContainer}>
-        <button className={styles.button}>Find vehicle</button>
+        <button onClick={handleSubmit} className={styles.button}>
+          Find vehicle
+        </button>
       </div>
-    </form>
+    </div>
   );
 };
 
