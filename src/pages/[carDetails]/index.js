@@ -35,7 +35,9 @@ const CarDetails = (props) => {
           <CarForm price={props.carData.price} showModal={showModalHandler} />
         </div>
       </div>
-      <Footer />
+      <div>
+        <Footer />
+      </div>
     </Fragment>
   );
 };
