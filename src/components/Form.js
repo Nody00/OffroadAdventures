@@ -8,7 +8,7 @@ const HeroForm = () => {
     router.push("/autoListings");
   }
   return (
-    <form className={styles.form} onSubmit={handleSubmit}>
+    <form className={styles.formHero} onSubmit={handleSubmit}>
       <div className={styles.smallContainer}>
         <label className={styles.label}>Pick up date</label>
         <input type="date" id="date" name="date" className={styles.input} />
