@@ -35,7 +35,7 @@ const CarDetails = (props) => {
           <CarForm price={props.carData.price} showModal={showModalHandler} />
         </div>
       </div>
-      <div>
+      <div className={styles.footerHack}>
         <Footer />
       </div>
     </Fragment>

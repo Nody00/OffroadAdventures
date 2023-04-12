@@ -17,7 +17,7 @@ const AutoListings = (props) => {
         <p className="subheading">Choose from our custom built machines</p>
         <AutoList carData={props.carDataProps} />
       </div>
-      <div>
+      <div className={styles.footerHack}>
         <Footer />
       </div>
     </Fragment>
