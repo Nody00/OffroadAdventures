@@ -7,6 +7,7 @@ import Vehicles from "@/components/Vehicles";
 import SmallSection from "@/components/Small";
 import ReviewSection from "@/components/Reviews";
 import Footer from "@/components/Footer";
+
 const HomePage = (props) => {
   return (
     <Fragment>
