@@ -17,7 +17,9 @@ const Hero = () => {
             </p>
             <button className={styles.actionButton}>View vehicles</button>
           </div>
-          <div className={styles.formContainer}>{/* <HeroForm /> */}</div>
+          <div className={styles.formContainer}>
+            <HeroForm />
+          </div>
         </main>
       </div>
     </Fragment>
