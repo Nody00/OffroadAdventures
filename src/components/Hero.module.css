@@ -1,5 +1,5 @@
 .heroContainer {
-  background-image: url("../assets/hero.jpg");
+  background-image: url("../../public/hero.jpg");
   background-position: center;
   /* height: 100vh; */
   background-size: cover;
