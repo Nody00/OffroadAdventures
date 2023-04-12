@@ -4,7 +4,7 @@ import { FaTruckMonster } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <div className={styles.footer}>
+      <div className={styles.footer2}>
         <div className="container">
           <div className={styles.footerGrid}>
             <div className={styles.logoSection}>

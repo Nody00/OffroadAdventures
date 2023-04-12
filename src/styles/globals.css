@@ -5,7 +5,6 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
-
 /*
 --- 01 TYPOGRAPHY SYSTEM
 
@@ -59,7 +58,6 @@ Medium:
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-
 * {
   box-sizing: border-box;
   padding: 0;
