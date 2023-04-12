@@ -4,7 +4,7 @@ import ReviewCard from "./ReviewCard";
 import { useInView } from "react-intersection-observer";
 const ReviewSection = (props) => {
   const [ref, inView, entry] = useInView({
-    threshold: 0.2,
+    threshold: 0.1,
     triggerOnce: true,
   });
   const responsive = {

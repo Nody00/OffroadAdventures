@@ -7,10 +7,14 @@ import Vehicles from "@/components/Vehicles";
 import SmallSection from "@/components/Small";
 import ReviewSection from "@/components/Reviews";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const HomePage = (props) => {
   return (
     <Fragment>
+      <Head>
+        <title>Off-roading Adventures</title>
+      </Head>
       <Hero />
       <Services />
       <HowItWorks />

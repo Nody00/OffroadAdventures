@@ -7,7 +7,7 @@ import CarDetailCard from "@/components/CarDetail/CarDetailCard";
 import CarForm from "@/components/CarDetail/CarForm";
 import Modal from "@/components/UI/Modal";
 import Confirmation from "@/components/CarDetail/Confirmation";
-
+import Head from "next/head";
 const CarDetails = (props) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -20,6 +20,9 @@ const CarDetails = (props) => {
 
   return (
     <Fragment>
+      <Head>
+        <title>Vehicle Details</title>
+      </Head>
       {showModal && (
         <Modal onHide={hideModalHandler}>
           <Confirmation onHide={hideModalHandler} />

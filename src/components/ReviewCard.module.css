@@ -60,13 +60,15 @@
 }
 @media (max-width: 39em) {
   .card {
-    margin: 0 10rem;
-    width: 60%;
+    margin: 0;
+    width: 80%;
+    padding: 1rem;
   }
 }
 @media (max-width: 25em) {
   .card {
-    margin: 0 2rem;
+    margin: 0;
     width: 80%;
+    padding: 1rem;
   }
 }

@@ -4,9 +4,13 @@ import Footer from "@/components/Footer";
 import { Fragment } from "react";
 import AutoList from "@/components/AutoListings/AutoListings";
 import { MongoClient } from "mongodb";
+import Head from "next/head";
 const AutoListings = (props) => {
   return (
     <Fragment>
+      <Head>
+        <title>Check out our vehicles</title>
+      </Head>
       <Header />
       <div className="container">
         <h2 className="heading-secondary">Auto Listings</h2>
