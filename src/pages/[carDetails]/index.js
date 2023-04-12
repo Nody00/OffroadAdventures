@@ -7,6 +7,7 @@ import CarDetailCard from "@/components/CarDetail/CarDetailCard";
 import CarForm from "@/components/CarDetail/CarForm";
 import Modal from "@/components/UI/Modal";
 import Confirmation from "@/components/CarDetail/Confirmation";
+
 const CarDetails = (props) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -50,7 +51,7 @@ export async function getStaticPaths() {
   client.close();
 
   return {
-    fallback: true,
+    fallback: "blocking",
     paths: carIds.map((car) => ({
       params: {
         carDetails: car._id.toString(),
