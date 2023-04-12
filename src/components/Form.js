@@ -8,7 +8,7 @@ const HeroForm = () => {
     router.push("/autoListings");
   }
   return (
-    <div className={styles.formHeroSpecial}>
+    <div>
       <div className={styles.formHeroSpecial2}>
         <div className={styles.smallContainer}>
           <label className={styles.label}>Pick up date</label>
