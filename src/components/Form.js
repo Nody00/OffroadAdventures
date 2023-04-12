@@ -1,8 +1,14 @@
 import styles from "./Form.module.css";
-
+import { useRouter } from "next/router";
 const HeroForm = () => {
+  const router = useRouter();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    router.push("/autoListings");
+  }
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={handleSubmit}>
       <div>
         <label>Pick up date</label>
         <input type="date" id="date" name="date" />

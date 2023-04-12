@@ -46,3 +46,13 @@
     gap: 6.4rem;
   }
 }
+
+.prepare {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.transition {
+  opacity: 1;
+  transform: translateY(0%);
+}

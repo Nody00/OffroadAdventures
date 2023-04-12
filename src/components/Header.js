@@ -28,17 +28,14 @@ const Header = () => {
           <Link href="/autoListings" className={styles.link}>
             Auto Listings
           </Link>
-          <Link href="/" className={styles.link}>
+          <a href="#how" className={styles.link}>
             About us
-          </Link>
-          <Link href="/" className={styles.link}>
-            Testimonials
-          </Link>
-          <Link href="/" className={styles.link}>
-            News
-          </Link>
-          <Link href="/" className={styles.link}>
-            Contact
+          </a>
+          <a href="#reviews" className={styles.link}>
+            Reviews
+          </a>
+          <Link href="/autoListings" className={styles.link}>
+            Book your ride today
           </Link>
         </nav>
       )}

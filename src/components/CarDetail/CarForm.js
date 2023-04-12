@@ -6,6 +6,7 @@ const CarForm = (props) => {
 
   function submitHandler(e) {
     e.preventDefault();
+    props.showModal();
   }
 
   function radioHandler(e) {

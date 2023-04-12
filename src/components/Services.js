@@ -1,9 +1,16 @@
 import styles from "./Services.module.css";
 import { FaCarCrash, FaMountain, FaCampground } from "react-icons/fa";
+import { CSSTransition } from "react-transition-group";
+import { useInView } from "react-intersection-observer";
 const Services = () => {
+  const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: true });
   return (
-    <div className={styles.section}>
-      <div className="container">
+    <div ref={ref} className={styles.section}>
+      <div
+        className={`container ${inView ? styles.transition : null} ${
+          styles.prepare
+        }`}
+      >
         <p className="heading-secondary">Our Services</p>
         <div className={styles.servicesContainer}>
           <div className={styles.service}>

@@ -1,10 +1,18 @@
 import styles from "./Small.module.css";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import { useInView } from "react-intersection-observer";
 const SmallSection = () => {
+  const [ref, inView, entry] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
   return (
-    <div className={styles.smallSection}>
-      <div className={`container ${styles.containerModified}`}>
+    <div ref={ref} className={styles.smallSection}>
+      <div
+        className={`container ${styles.containerModified} ${
+          inView ? styles.transition : null
+        } ${styles.prepare}`}
+      >
         <p className={styles.textFirst}>
           Call today to book your <span>adventure</span>
         </p>

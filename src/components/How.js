@@ -1,9 +1,20 @@
 import styles from "./How.module.css";
 import { FaTruckMonster, FaToolbox, FaRoute } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { CSSTransition } from "react-transition-group";
 const HowItWorks = () => {
+  const [ref, inView, entry] = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  console.log(inView);
   return (
-    <div className={styles.section}>
-      <div className="container">
+    <div ref={ref} className={styles.section} id="how">
+      <div
+        className={`container ${inView ? styles.transition : null} ${
+          styles.prepare
+        }`}
+      >
         <p className={`heading-secondary ${styles.serviceTitle}`}>
           How it works
         </p>

@@ -88,6 +88,7 @@ body {
   margin: 0 auto;
   padding: 0 3.2rem;
   max-width: 120rem;
+  transition: all 0.5s ease-out;
 }
 
 .heading-primary,

@@ -49,3 +49,34 @@
 }
 @media (max-width: 25em) {
 }
+
+/* .enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.enterActive {
+  animation: showSection 0.5s ease-out forwards;
+}
+
+@keyframes showSection {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+} */
+
+.prepare {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.transition {
+  opacity: 1;
+  transform: translateX(0%);
+}

@@ -1,7 +1,12 @@
 import Carousel from "react-multi-carousel";
 import styles from "./Reviews.module.css";
 import ReviewCard from "./ReviewCard";
+import { useInView } from "react-intersection-observer";
 const ReviewSection = (props) => {
+  const [ref, inView, entry] = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -21,8 +26,12 @@ const ReviewSection = (props) => {
   };
 
   return (
-    <div className={styles.bigContainer}>
-      <div className="container">
+    <div ref={ref} className={styles.bigContainer} id="reviews">
+      <div
+        className={`container ${inView ? styles.transition : null} ${
+          styles.prepare
+        }`}
+      >
         <h2 className="heading-secondary margin-btm-small">Customer Reviews</h2>
         <p className="subheading">Listen to our satisfied customers</p>
       </div>

@@ -1,18 +1,34 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import styles from "./index.module.css";
 import { MongoClient, ObjectId } from "mongodb";
 import CarDetailCard from "@/components/CarDetail/CarDetailCard";
 import CarForm from "@/components/CarDetail/CarForm";
+import Modal from "@/components/UI/Modal";
+import Confirmation from "@/components/CarDetail/Confirmation";
 const CarDetails = (props) => {
+  const [showModal, setShowModal] = useState(false);
+
+  function showModalHandler() {
+    setShowModal(true);
+  }
+  function hideModalHandler() {
+    setShowModal(false);
+  }
+
   return (
     <Fragment>
+      {showModal && (
+        <Modal onHide={hideModalHandler}>
+          <Confirmation onHide={hideModalHandler} />
+        </Modal>
+      )}
       <Header />
       <div className="container">
         <div className={styles.grid}>
           <CarDetailCard data={props.carData} reviewData={props.reviewData} />
-          <CarForm price={props.carData.price} />
+          <CarForm price={props.carData.price} showModal={showModalHandler} />
         </div>
       </div>
       <Footer />

@@ -13,3 +13,11 @@
 /* .bigContainer {
   margin-bottom: 9.6rem;
 } */
+
+.prepare {
+  opacity: 0;
+}
+
+.transition {
+  opacity: 1;
+}

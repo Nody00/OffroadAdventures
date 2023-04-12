@@ -19,23 +19,28 @@ const MobileNav = (props) => {
     >
       <div className={styles.container}>
         <nav className={styles.nav}>
-          <Link href="/" className={styles.link}>
+          <Link href="/" className={styles.link} onClick={props.onHide}>
             Home
           </Link>
-          <Link href="/" className={styles.link}>
+          <Link
+            href="/autoListings"
+            className={styles.link}
+            onClick={props.onHide}
+          >
             Auto Listings
           </Link>
-          <Link href="/" className={styles.link}>
+          <a href="#how" className={styles.link} onClick={props.onHide}>
             About us
-          </Link>
-          <Link href="/" className={styles.link}>
-            Testimonials
-          </Link>
-          <Link href="/" className={styles.link}>
-            News
-          </Link>
-          <Link href="/" className={styles.link}>
-            Contact
+          </a>
+          <a href="#reviews" className={styles.link} onClick={props.onHide}>
+            Reviews
+          </a>
+          <Link
+            href="/autoListings"
+            className={styles.link}
+            onClick={props.onHide}
+          >
+            Book your ride today
           </Link>
           <div className={styles.mobileNavBtn} onClick={props.onHide}>
             <Suspense>

@@ -9,3 +9,11 @@
   margin-bottom: 2.4rem;
   text-align: center;
 }
+
+.prepare {
+  opacity: 0;
+}
+
+.transition {
+  opacity: 1;
+}

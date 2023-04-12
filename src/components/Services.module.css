@@ -42,3 +42,13 @@
 }
 @media (max-width: 25em) {
 }
+
+.prepare {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.transition {
+  opacity: 1;
+  transform: translateX(0%);
+}

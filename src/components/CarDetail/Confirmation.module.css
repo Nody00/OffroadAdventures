@@ -1,0 +1,31 @@
+.confirmation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.4rem;
+}
+
+.confirmation p {
+  font-size: 2.4rem;
+}
+
+.confirmation button {
+  padding: 1rem 2rem;
+  border: none;
+
+  background-color: #2f9e44;
+  /* border-radius: 9px; */
+  font-size: 1.6rem;
+  /* font-weight: 600; */
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.confirmation button:hover {
+  cursor: pointer;
+  background-color: #59b169;
+}
+
+.confirmation button:active {
+  background-color: #82c58f;
+}
