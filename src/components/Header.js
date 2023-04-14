@@ -17,9 +17,9 @@ const Header = () => {
   }
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>
+      <Link href="/" className={styles.logo}>
         RENT A <span>OFFROADER</span>
-      </div>
+      </Link>
       {!mobileNav && (
         <nav className={styles.nav}>
           <Link href="/" className={styles.link}>
