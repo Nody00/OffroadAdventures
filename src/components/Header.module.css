@@ -12,6 +12,8 @@
   letter-spacing: 1.2px;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
+  color: #333;
 }
 
 .logo span {
