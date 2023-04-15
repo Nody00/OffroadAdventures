@@ -17,7 +17,7 @@ const Footer = () => {
               </p>
             </div>
             <div className={styles.footerInfo}>
-              <p className={styles.title}>USEFUL LINK</p>
+              <p className={styles.title}>USEFUL LINKS</p>
               <div className={styles.linkContainer}>
                 <p className={styles.footerLink}>About us</p>
                 <p className={styles.footerLink}>Services</p>
