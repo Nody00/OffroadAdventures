@@ -14,6 +14,10 @@ const HomePage = (props) => {
     <Fragment>
       <Head>
         <title>Off-roading Adventures</title>
+        <meta
+          name="description"
+          content="Experience wild offroading adventures with our team"
+        />
       </Head>
       <Hero />
       <Services />

@@ -10,6 +10,10 @@ const AutoListings = (props) => {
     <Fragment>
       <Head>
         <title>Check out our vehicles</title>
+        <meta
+          name="description"
+          content="View our huge selection of vehicles"
+        />
       </Head>
       <Header />
       <div className="container">
